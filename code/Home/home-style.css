@@ -1,0 +1,409 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-image: url(/image/ikea-food-bg-crop.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navigation Bar */
+
+.navbar img{
+
+    width: 200px;
+    height: 120px;
+}
+
+.navbar .navbar-nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 37px 112px;
+    /* min-width: 1780px; */
+}
+
+.navbar .navbar-nav a{
+
+    font-family: "Kanit", sans-serif;
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 36px;
+    color: white;
+    transition: color 0.3s;
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .navbar-nav a:hover{
+
+    color: #FBD914;
+}
+
+.navbar .navbar-nav .home-click{
+
+    color: #FBD914;
+    border-bottom: 5px solid #0058AB;
+    border-radius: 1px;
+}
+
+/* Home Screen */
+
+.home-screen{
+
+    align-items: center;
+    animation: transitionIn 1s;
+    /* max-height: 625px; */
+    /* min-width: 1780px; */
+}
+
+@keyframes transitionIn{
+
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.home-screen .home-home{
+
+    display: flex;
+    align-items: center;
+    /* margin: 0px 200px; */
+    margin-right: 50px;
+    justify-content: center;
+}
+
+.home-screen .home-home .home-text{
+
+    text-align: right;
+}
+
+.home-screen h1{
+
+    font-family: 'Roboto', sans-serif;
+    color: #0058AB;
+    font-size: 200px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.home-screen h2{
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 96px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.home-screen p{
+
+    font-family: 'Cagliostro', sans-serif;
+    color: white;
+    font-size: 40px;
+    max-width: 730px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.home-screen .start-btn{
+
+    margin-top: 40px;
+}
+
+.home-screen a{
+
+    font-size: 25px;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 30px 50px;
+    background-color: white;
+    transition: linear 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #0058AB;
+    transition: linear 0.2s;
+}
+
+.home-screen a:hover{
+
+    background-color: #0058AB;
+    color: white;
+}
+
+.home-screen img{
+
+    display: inline-block;
+    width: 500px;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 60px;
+    justify-items: center;
+    position: relative;
+}
+
+.home-screen .home-image{
+
+    justify-items: center;
+    align-items: center;
+    background-color: #DDC11D;
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+    margin-left: 100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 100px;
+    cursor: default;
+}
+
+span{
+    font-weight: 500;
+    color: #DDC11D;
+    text-decoration: underline;
+    transition: linear 0.1s;
+    cursor: default;
+}
+
+span:hover{
+
+    color: #0058AB;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media screen and (max-width: 1366px){
+
+    .navbar{
+        margin: 0px 20px;
+    }
+
+    .navbar img{
+        width: 130px;
+        height: 70px;
+    }
+    
+    .navbar .navbar-nav{
+
+        margin: 24px 20px;
+        /* min-width: 1290px; */
+    }
+    
+    .navbar .navbar-nav a{
+
+        font-size: 25px;
+        margin: 0px 30px;
+    }
+
+    /* Home Screen */
+
+    .home-screen .home-home .home-text{
+
+        text-align: right;
+    }
+
+    .home-screen h1{
+
+        margin-left: 30px;
+        font-family: 'Roboto', sans-serif;
+        color: #0058AB;
+        font-size: 160px;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .home-screen h2{
+
+        margin-left: 30px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 80px;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+        min-width: 400px;
+    }
+
+    .home-screen p{
+
+        margin-left: 30px;
+        font-family: 'Cagliostro', sans-serif;
+        color: white;
+        font-size: 28px;
+        max-width: 500px;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .home-screen .home-home{
+
+        display: flex;
+        align-items: center;
+        margin: 100px 10px;
+        margin-right: 30px;
+    }
+
+    .home-screen .start-btn{
+
+        margin-top: 20px;
+    }
+
+    .home-screen a{
+
+        margin-left: 30px;
+        font-size: 18px;
+        justify-content: center;
+        border-radius: 18px;
+        padding: 17px 30px;
+        background-color: white;
+        transition: linear 0.2s;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        color: #0058AB;
+        transition: linear 0.2s;
+    }
+
+    .home-screen a:hover{
+
+        background-color: #0058AB;
+        color: white;
+    }
+
+    .home-screen img{
+
+        display: inline-block;
+        width: 370px;
+        align-items: center;
+        margin-top: 43px;
+        margin-left: 27px;
+        justify-items: center;
+        position: relative;
+    }
+
+    .home-screen .home-image{
+
+        margin-top: 20px;
+        justify-items: center;
+        align-items: center;
+        background-color: #DDC11D;
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    h3{
+        color: white;
+        font-size: 17px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        text-align: right;
+        padding-top: 40px;
+        padding-right: 100px;
+    }
+    
+    span{
+        font-weight: 500;
+        color: #DDC11D;
+        text-decoration: underline;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        margin: 0px 10px;
+    }
+
+    .navbar img{
+        width: 120px;
+        height: 60px;
+    }
+    
+    .navbar .navbar-nav{
+
+        margin: 24px 20px;
+        min-width: 730px;
+    }
+    
+    .navbar .navbar-nav a{
+
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+
+    /* Home Screen */
+
+    .home-screen{
+        min-width: 590px;
+    }
+
+    .home-screen .home-home .home-text{
+
+        text-align: left;
+    }
+
+    .home-screen h1{
+
+        font-size: 80px;
+    }
+
+    .home-screen h2{
+
+        font-size: 40px;
+    }
+
+    .home-screen p{
+
+        font-size: 20px;
+        max-width: 370px;
+    }
+
+    .home-screen .home-home{
+
+        margin: 200px 10px;
+    }
+
+    .home-screen a{
+        
+        font-size: 12px;
+        padding: 15px 25px;
+    }
+
+    .home-screen img{
+
+        width: 270px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .home-screen .home-image{
+
+        width: 270px;
+        height: 270px;
+        margin-left: 30px;
+    }
+
+    h3{
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 60px;
+    }
+}

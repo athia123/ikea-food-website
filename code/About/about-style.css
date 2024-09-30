@@ -1,0 +1,279 @@
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-image: url(/image/ikea-food-bg-3.jpg);
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navigation Bar */
+
+.navbar img{
+
+    width: 200px;
+    height: 120px;
+}
+
+.navbar .navbar-nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 37px 112px;
+    min-width: 1780px;
+}
+
+.navbar .navbar-nav a{
+
+    font-family: "Kanit", sans-serif;
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 36px;
+    /* padding-top: 10px; */
+    color: white;
+    transition: color 0.3s;
+    text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-navi{
+
+    margin-right: 85px;
+}
+
+.navbar .navbar-nav a:hover{
+
+    color: #FBD914;
+}
+
+.navbar .navbar-nav .about-click{
+
+    color: #FBD914;
+    border-bottom: 5px solid #0058AB;
+    border-radius: 1px;
+}
+
+/* About */
+
+.menu-main{
+
+    display: flex;
+    background-color: rgba(237, 220, 199, 0.89);
+    padding: 10px;
+    align-items: center;
+    border-radius: 50px;
+    margin: 10px 50px;
+    min-height: 725px;
+    min-width: 1780px;
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.image img{
+    width: 130px;
+    margin-right: 40px;
+    margin-left: 100px;
+    opacity: 0.1;
+}
+
+.line{
+
+    background-color: #A79F9F;
+    margin: 29px 60px;
+    padding: 300px 5px;
+    border-radius: 20px;
+    color: #A79F9F;
+}
+
+.about-text{
+    margin: 0px 100px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+p{
+    padding-bottom: 30px;
+    max-width: 600px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.social img{
+
+    width: 400px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* Laptop */
+@media screen and (max-width: 1366px){
+
+    .navbar{
+        margin: 0px 20px;
+    }
+
+    .navbar img{
+        width: 130px;
+        height: 70px;
+    }
+    
+    .navbar .navbar-nav{
+
+        margin: 24px 20px;
+        min-width: 1290px;
+    }
+    
+    .navbar .navbar-nav a{
+
+        font-size: 25px;
+        margin: 0px 30px;
+    }
+
+    /* About */
+
+    .menu-main{
+
+        display: flex;
+        background-color: rgba(237, 220, 199, 0.89);
+        padding: 10px;
+        align-items: center;
+        border-radius: 50px;
+        margin: 10px 50px;
+        min-height: 625px;
+        min-width: 1245px;
+    }
+
+    .image img{
+        width: 0;
+    }
+
+    .line{
+
+        background-color: #A79F9F;
+        margin: 29px 10px;
+        padding: 240px 5px;
+        border-radius: 20px;
+        color: #A79F9F;
+    }
+
+    .about-text{
+        margin: 0px 100px;
+    }
+
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+
+    p{
+        padding-bottom: 30px;
+        min-width: 500px;
+        font-size: 17px;
+    }
+    
+    .social img{
+    
+        width: 300px;
+        margin-right: 0px;
+        margin-left: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        margin: 0px 10px;
+    }
+
+    .navbar img{
+        width: 120px;
+        height: 60px;
+    }
+    
+    .navbar .navbar-nav{
+
+        margin: 24px 20px;
+        min-width: 730px;
+    }
+    
+    .navbar .navbar-nav a{
+
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+
+    /* About */
+
+    .menu-main{
+
+        background-color: rgba(237, 220, 199, 0.89);
+        padding: 10px;
+        display: block;
+        border-radius: 50px;
+        margin: 10px 50px;
+        min-height: 625px;
+        min-width: 650px;
+    }
+
+    .image img{
+        width: 0;
+    }
+
+    .line{
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .about-text{
+
+        margin: 10px 50px;
+    }
+
+    h2{
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+
+    p{
+        padding-bottom: 30px;
+        max-width: 540px;
+        font-size: 12px;
+    }
+    
+    .social img{
+    
+        width: 180px;
+        margin-top: 0px;
+        margin-left: 40px;
+    }
+}

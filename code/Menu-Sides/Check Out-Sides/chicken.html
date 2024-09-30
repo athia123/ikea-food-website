@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Kanit:ital,wght@0,200;0,300;0,500;0,600;1,200&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/code/Menu-Sides/Check Out-Sides/chicken-style.css">
+    <title>IKEA Food</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Check Out</h1>
+        <div class="food">
+            <div class="image">
+                <img src="/image/chicken.png" alt="image1">
+            </div>
+            <div class="image-text">
+                <h3>Sides</h3>
+                <h2>Chicken Drumstick</h2>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="total">
+            <div class="total-items">
+                <div class="counter">
+                    <span class="minus">-</span>
+                    <span class="num">1</span>
+                    <span class="plus">+</span>
+                </div>
+                <h4>*max 10 items</h4>
+            </div>
+
+            <div id="price-food" class="price1">
+                12000
+            </div>
+            
+            <div id="close-btn" class="close-btn">
+                <a href="/code/Menu-Main Course/Menu-Meatballs/menu-meatballs.html"><span>X</span></a>
+            </div>
+        </div>
+
+        <div class="check-out">
+            <div class="total-text">
+                <div>
+                    TOTAL PRICE
+                </div>
+                <div id="total-price" class="price2">
+                    Rp. 12000
+                </div>
+            </div>
+            <div class="confirm">
+                <button type="submit" class="btn" onclick="openPopup()">CONFIRM</button>
+
+                <div class="popup" id="popup">
+                    <img src="/image/404-tick.png">
+                    <h2>Thankyou for Ordering!</h2>
+                    <h4 id="receipt">Your Receipt ID : </h4>
+                    <h5>Show Your Receipt ID to The Cashier</h5>
+                    <a href="/code/Home/home.html">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/code/Menu-Sides/Check Out-Sides/script.js"></script>
+</body>
+</html>
